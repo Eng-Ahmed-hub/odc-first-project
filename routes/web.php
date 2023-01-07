@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 Route::get('home', [EmployeeController::class, 'index']);
 Route::post('store-form', [EmployeeController::class, 'store']);
+//=============Show All Employee=================================
+Route::get('show',[EmployeeController::class,'show']);

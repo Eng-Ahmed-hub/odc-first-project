@@ -45,6 +45,7 @@
           </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="{{ url('show') }}"><button type="button">Show All Employees</button></a>
       </form>
     </div>
   </div>

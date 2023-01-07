@@ -23,4 +23,10 @@ class EmployeeController extends Controller
         $employee->save();
         return redirect('home')->with('status', 'Employee Form Data Has Been inserted');
     }
+
+    public function show()
+    {
+        $employee = Employee::all();
+        return view('allEmployee',["employees"=>$employee]);
+    }
 }
